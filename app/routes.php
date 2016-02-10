@@ -11,7 +11,11 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+ // Route::get('/', function()
+ // {
+ //  return View::make('home');
+ // });
+
+
+Route::get('/','LangController@index');
+Route::post('lang','LangController@langsave');
